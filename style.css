@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Meow+Script&family=Miltonian&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moo+Lah+Lah&family=Mystery+Quest&display=swap');
 
 
 * {
@@ -9,39 +10,42 @@
 
 
 header {
-    background-color: rgb(241, 177, 228);
+    background-color: rgb(240, 157, 223);
     min-height: 100px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 5px;
 }
 
 header h1 {
-    font-family: var(--fonte-destaque);
-    margin-bottom: 20px;
+    color: rgb(109, 7, 87);
+    margin-bottom: 10px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
-    font-size: 50px;
+    font-size: 80px;
     font-weight: normal;
 }
 
 header p {
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(109, 7, 87);
+    font-size: 20px;
+    font-family: var(--fonte-destaque);
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 20px;
     font-weight: bold;
+    margin: 10px;
 }
 
 nav {
     display: flex;
     justify-content: right;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.486);
-    padding: 15px 10px 5px 0px;
+    padding: 7px 10px 7px 0px;
     gap: 10px;
 }
 
 nav a {
-    color: black;
-    padding: 10px;
+    color: rgb(109, 7, 87);
+    padding:5px 10px;
     border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -51,8 +55,72 @@ nav a {
 
 
 nav a:hover {
-    background-color: rgb(217, 147, 204);
-    color: black;
+    background-color: rgb(109, 7, 87);
+    color: white;
     transition-duration: 0.4s;
 }
 
+body {
+    background-color: rgb(238, 199, 230);
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+}
+
+.card {
+    height: 400px;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition-duration: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    opacity: 0.75;
+}
+
+.conteudo-card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0));
+}
+
+.conteudo-card h3 {
+    font-family: 'Miltonian', serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+@media (max-width: 600px) {
+    .produtos {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+        padding: 10px;
+    }
+    .card {
+        max-width: 400px; 
+        margin: 0 auto; 
+    }
+}
