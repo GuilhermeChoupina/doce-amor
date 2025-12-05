@@ -13,7 +13,7 @@ header {
     padding-bottom: 40px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-image: url(back-9.jpg);
+    background-image: url(/img/back-9.jpg);
     background-size: 50%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445);
 }

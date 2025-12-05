@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+/*p*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(240, 157, 223);
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-image: url(/img/back-9.jpg);
+    background-size: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445);
+}
+
+header h1 {
+    color: rgb(236, 78, 205);
+    margin-top: 0px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+    font-size: 100px;
+    font-weight: normal;
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+body {
+    background-color: rgb(238, 200, 230);
+}
+
+.menu-bolos-caseiros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    padding-top: 70px;
+    max-width: 1200px;
+    margin: auto;
+    margin-left: 190px;
+    margin-bottom: 70px;
+}
+
+.card {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition-duration: 0.3s;
+}
+
+.conteudo-card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0));
+}
+
+.conteudo-card h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
