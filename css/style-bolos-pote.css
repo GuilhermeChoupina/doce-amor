@@ -1,32 +1,154 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');/*p*/
+/* ===== FONTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
 
+/* ===== RESET ===== */
 * {
-    padding: 0px;
-    margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
+body {
+  background-color: rgb(238, 200, 230);
+  overflow-x: hidden; /* evita scroll lateral */
+}
+
+/* ===== HEADER ===== */
 header {
-    background-color: rgb(240, 157, 223);
-    text-align: center;
-    padding-bottom: 40px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background-image: url(/img/back-9.jpg);
-    background-size: 50%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445);
+  background-color: rgb(240, 157, 223);
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-image: url(/img/back-9.jpg);
+  background-position: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445);
 }
 
 header h1 {
-    color: rgb(236, 78, 205);
-    margin-top: 0px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
-    font-size: 100px;
-    font-weight: normal;
-    font-family: "Hachi Maru Pop", cursive;
+  color: rgb(236, 78, 205);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+  font-family: "Playwrite NO", cursive;
+
+  /* RESPONSIVO */
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: normal;
 }
 
-body {
-    background-color: rgb(238, 200, 230);
+/* ===== ARTICLES ===== */
+article {
+  background-color: rgb(245, 217, 238);
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445);
+}
+
+/* ===== TÍTULO ===== */
+.titulo {
+  text-align: center;
+  padding: 10px 20px;
+  font-family: "Hachi Maru Pop", cursive;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+
+  /* RESPONSIVO */
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: bold;
+}
+
+/* ===== GRID DE BOLOS ===== */
+.menu-bolos-caseiros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.dois {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== IMAGEM ===== */
+.card img {
+  width: 100%;
+  max-width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== TEXTO DO CARD ===== */
+.conteudo-card {
+  color: black;
+  padding-top: 10px;
+  font-family: "Playwrite NO", cursive;
+  font-weight: bold;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.445);
+  font-size: 1.1rem;
+}
+
+/* ===== BOTÃO ===== */
+.btn-add {
+  margin-top: 8px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e76f8a;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100px;
+}
+
+.btn-add:hover {
+    background-color: #fff;
+    color: rgb(231, 111, 138);
+}
+
+/* ===== CARRINHO ===== */
+.carrinho {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(245, 217, 238);
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445);
+}
+
+.carrinho ul {
+  padding-left: 18px;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== MOBILE FINO ===== */
+@media (max-width: 480px) {
+  .card img {
+    height: 150px;
+  }
+
+  .acoes {
+    flex-direction: column;
+  }
 }

@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doceria - Doce&amor</title>
     <link rel="stylesheet" href="/css/style-bolos-pote.css">
 </head>
+
 <body>
     <header>
         <h1>Bolos de pote</h1>
     </header>
+
+    <article class="menu-segunda">
+        <h1 class="titulo">Vendas de Segunda-Feira !</h1>
+        <div class="menu-bolos-caseiros">
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Abacaxi R$11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Abacaxi')">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Ninho Tradicional R$ 11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Ninho Tradicional')">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Ninho com Morango R$ 11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Ninho com Morango')">Adicionar</button>
+                </div>
+            </div>
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Ninho com Nutella R$ 11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Ninho com Nutella')">Adicionar</button>
+                </div>
+            </div>
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Ninho com Maracujá R$ 11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Ninho com Maracujá')">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="menu-quinta">
+        <h1 class="titulo">Vendas de Quinta-Feira !</h1>
+        <div class="menu-bolos-caseiros">
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Choconinho R$ 11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Choconinho')">Adicionar</button>
+                </div>
+            </div>
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Prestígio R$11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Prestígio')">Adicionar</button>
+                </div>
+            </div>
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Cenoura R$11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Cenoura')">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Brigadeiro R$11,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Brigadeiro')">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section class="carrinho">
+        <h2>Seu pedido:</h2>
+        <ul id="lista-pedido"></ul>
+
+        <div class="acoes">
+            <button class="btn-add" onclick="copiarPedido()">Copiar</button>
+            <button class="btn-add" onclick="enviarWhats()">WhatsApp</button>
+            <button class="btn-add" onclick="limparWhats()">Limpar</button>
+        </div>
+    </section>
+
+    <script src="/js/js-bolo-pote.js"></script>
+
+</body>
+
+</html>

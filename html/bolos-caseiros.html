@@ -5,78 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doceria - Doce&amor</title>
-    <link rel="stylesheet" href="/css/style-bolos-caseiros.css">
-
-    <header>
-        <h1>Bolos caseiros</h1>
-        <nav>
-            <a href="index.html">Início</a>
-        </nav>
-    </header>
-
-
-    <div class="menu-bolos-caseiros">
-        <div class="dois">
-            <div class="card">
-                <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
-            </div>
-            <div class="conteudo-card">
-                <h3>Bolo de cenoura</h3>
-            </div>
-        </div>
-
-        <div class="dois">
-            <div class="card">
-                <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
-            </div>
-            <div class="conteudo-card">
-                <h3>Bolo de cenoura</h3>
-            </div>
-        </div>
-
-        <div class="dois">
-            <div class="card">
-                <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
-            </div>
-            <div class="conteudo-card">
-                <h3>Bolo de cenoura</h3>
-            </div>
-        </div>
-
-        <div class="dois">
-            <div class="card">
-                <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
-            </div>
-            <div class="conteudo-card">
-                <h3>Bolo de cenoura</h3>
-            </div>
-        </div>
-
-        <div class="dois">
-            <div class="card">
-                <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
-            </div>
-            <div class="conteudo-card">
-                <h3>Bolo de cenoura</h3>
-            </div>
-        </div>
-        
-        <div class="dois">
-            <div class="card">
-                <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
-            </div>
-            <div class="conteudo-card">
-                <h3>Bolo de cenoura</h3>
-            </div>
-        </div>
-
-
-
-    </div>
-
-
-
-
+    <link rel="stylesheet" href="/css/style-bolos-pote.css">
 </head>
 
 <body>
+    <header>
+        <h1>Bolos Caseiros</h1>
+    </header>
+
+    <article class="menu-segunda">
+        <h1 class="titulo">Entrega sob encomenda</h1>
+        <div class="menu-bolos-caseiros">
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Aipim R$39,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Aipim')">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Cenoura R$39,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Cenoura')">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Limão R$39,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Limão')">Adicionar</button>
+                </div>
+            </div>
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Laranja R$39,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Laranja')">Adicionar</button>
+                </div>
+            </div>
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Milho R$39,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Milho')">Adicionar</button>
+                </div>
+            </div>
+            <div class="dois">
+                <div class="card">
+                    <img src="/img/bolo-cenoura.jpg" alt="cenoura" class="img">
+                </div>
+                <div class="conteudo-card">
+                    <h3>Bolo de Chocolate R$39,99</h3>
+                    <button class="btn-add" onclick="adicionarPedido('Bolo de Chocolate')">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section class="carrinho">
+        <h2>Seu pedido:</h2>
+        <ul id="lista-pedido"></ul>
+
+        <div class="acoes">
+            <button class="btn-add" onclick="copiarPedido()">Copiar</button>
+            <button class="btn-add" onclick="enviarWhats()">WhatsApp</button>
+            <button class="btn-add" onclick="limparWhats()">Limpar</button>
+        </div>
+    </section>
+
+    <script src="/js/js-bolo-caseiro.js"></script>
+
+</body>
+
+</html>
